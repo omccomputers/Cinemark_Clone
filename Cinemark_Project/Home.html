@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js" defer></script>
+    <title>¡Bienvenidos a Cinemark Colombia!</title>
+
+</head>
+
+<body>
+    <header>
+        <div class="mainHeader">
+            <div class="standar">
+                <p class="infoContainer"><span>Aquí <a href="https://www.cinemark.com.co/estandar-cinemark">Conoce El
+                            Estándar Cinemark</a> </span></p>
+            </div>
+
+            <div class="social">
+
+                <div class="redes">
+                    <a href="https://www.facebook.com/CinemarkColombia" class="redes-facebook">
+                        <img src="./Imagenes/facebook.svg" alt="facebook"> </a>
+                    <a href="https://twitter.com/CinemarkCol?lang=es" class="redes-twitter">
+                        <img src="./Imagenes/twitter.svg" alt="twitter"> </a>
+                    <a href="https://www.instagram.com/cinemarkcol" class="redes-instagram">
+                        <img src="./Imagenes/instagram.svg" alt="instagram"> </a>
+                </div>
+
+                <ul class="lista">
+                    <li>
+                        <div>
+                            <a href="https://www.cinemark.com.co/corporativo/quienes-somos"
+                                class="conocenos">CONÓCENOS</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <a href="https://www.cinemark.com.co/formatos" class="formatos">FORMATOS</a>
+                        </div>
+                    </li>
+                    <li><a href="" class="marketing">MARKETING EMPRESARIAL</a>
+                        <ul class="subMenu">
+                            <li><a href="https://www.cinemark.com.co/marketing-empresarial/ventas-corporativas"
+                                    class="">VENTAS CORPORATIVAS</a></li>
+                            <li><a href="https://www.cinemark.com.co/marketing-empresarial/eventos" class="">EVENTOS</a>
+                            </li>
+                            <li><a href="https://www.cinemark.com.co/marketing-empresarial/publicidad"
+                                    class="">PUBLICIDAD</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <div class="usuario">
+                    <span class="registrar"><button type="button"
+                            class="registrarse"><span>Registrarse</span></button></span>
+                    <span class="sesion"><button type="button" class="iniSesion"><span>Iniciar
+                                Sesión</span></button></span>
+                </div>
+
+            </div>
+
+            <!-- Menú principal -->
+            <div class="menu">
+                <!-- Logo -->
+                <div class="logo">
+                    <img class="cineLogo" src="./Imagenes/logo.png" alt="cinmar_logo">
+                </div>
+
+                <!-- Lista -->
+                <ul class="menu-list">
+                    <li class="menuPrincipal"><a href="#">CARTELERA</a></li>
+                    <li class="menuPrincipal"><a href="#">TEATROS</a></li>
+                    <li class="menuPrincipal"><a href="#">CONFITERÍA</a></li>
+                    <li class="menuPrincipal"><a href="#">PROMOCIONES</a></li>
+                    <li class="menuPrincipal"><a href="#">MEMBRESÍA GOLD</a></li>
+                    <li class="menuPrincipal"><a href="#">CONCURSOS</a></li>
+                </ul>
+
+                <!-- Separador -->
+                <div class="separador"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Banner Principal -->
+
+    <section class="slider">
+        <div class="slider_contenedor contenedor">
+            <a class="slideButton prevSlide" id="previous"><i class="fa fa-left-long"></i></a>
+
+            <section class="slider_body slider_body--show" data-id="1">
+                <figure class="slider_picture">
+                    <img src="./Imagenes/1.png" alt="slider_1" class="slider_img">
+                </figure>
+            </section>
+
+            <section class="slider_body" data-id="2">
+                <figure class="slider_picture">
+                    <img src="./Imagenes/2.png" alt="slider_2" class="slider_img">
+                </figure>
+            </section>
+
+            <section class="slider_body" data-id="3">
+                <figure class="slider_picture">
+                    <img src="./Imagenes/3.png" alt="slider_3" class="slider_img">
+                </figure>
+            </section>
+
+            <section class="slider_body" data-id="4">
+                <figure class="slider_picture">
+                    <img src="./Imagenes/4.png" alt="slider_4" class="slider_img">
+                </figure>
+            </section>
+
+            <section class="slider_body" data-id="5">
+                <figure class="slider_picture">
+                    <img src="./Imagenes/5.png" alt="slider_5" class="slider_img">
+                </figure>
+            </section>
+
+            <section class="slider_body" data-id="6">
+                <figure class="slider_picture">
+                    <img src="./Imagenes/6.png" alt="slider_6" class="slider_img">
+                </figure>
+            </section>
+
+            <section class="slider_body" data-id="7">
+                <figure class="slider_picture">
+                    <img src="./Imagenes/7.png" alt="slider_7" class="slider_img">
+                </figure>
+            </section>
+
+            <section class="slider_body" data-id="8">
+                <figure class="slider_picture">
+                    <img src="./Imagenes/8.png" alt="slider_8" class="slider_img">
+                </figure>
+            </section>
+
+            <a class="slideButton nextSlide" id="next"><i class="fa fa-right-long"></i></a>
+
+            <div class="slider_buttons">
+                <input type="radio" class="button_slider" name="btn" id="rb_1" checked>
+                <input type="radio" class="button_slider" name="btn" id="rb_2">
+                <input type="radio" class="button_slider" name="btn" id="rb_3">
+                <input type="radio" class="button_slider" name="btn" id="rb_4">
+                <input type="radio" class="button_slider" name="btn" id="rb_5">
+                <input type="radio" class="button_slider" name="btn" id="rb_6">
+                <input type="radio" class="button_slider" name="btn" id="rb_7">
+                <input type="radio" class="button_slider" name="btn" id="rb_8">
+            </div>
+        </div>
+    </section>
+
+
+
+    <div class="peliculas">
+
+        <h1 class="h_cartelera-estrenos h_top">Estrenos / Cartelera</h1>
+
+        <section class="cartelera secciones">
+
+            <!-- Sección estrenos -->
+
+            <a class="movieButton prevMovie" id="previous"><i class="fa fa-left-long"></i></a>
+
+            <div class="peli_show wrappers peli" data-id="1">
+
+                <div class="pelicula" id="peli_1">
+                    <div class="estreno_cartelera boton_superior">
+                        Estreno
+                    </div>
+                    <a href="#"><img src="./Imagenes/Estreno/ant_man_quantunmania.jpg" alt="Ant_man" id="posters"></a>
+                    <button type="button" class="boton_posters">Ver Horarios</button>
+                </div>
+
+                <div class="pelicula" id="peli_2">
+                    <div class="estreno_cartelera boton_superior">
+                        Estreno
+                    </div>
+                    <a href="#"><img src="./Imagenes/Estreno/creed3.jpeg" alt="creed" id="posters"></a>
+                    <button type="button" class="boton_posters">Ver Horarios</button>
+                </div>
+
+                <div class="pelicula" id="peli_3">
+                    <div class="estreno_cartelera boton_superior">
+                        Estreno
+                    </div>
+                    <a href="#"><img src="./Imagenes/Estreno/gato_con_botas.jpg" alt="gato_botas" id="posters"></a>
+                    <button type="button" class="boton_posters">Ver Horarios</button>
+                </div>
+
+                <div class="pelicula" id="peli_4">
+                    <div class="estreno_cartelera boton_superior">
+                        Estreno
+                    </div>
+                    <a href="#"><img src="./Imagenes/Estreno/la_ballena.jpg" alt="whale" id="posters"></a>
+                    <button type="button" class="boton_posters">Ver Horarios</button>
+                </div>
+
+                <div class="pelicula" id="peli_5">
+                    <div class="estreno_cartelera boton_superior">
+                        Estreno
+                    </div>
+                    <a href="#"><img src="./Imagenes/Estreno/13_exorcismos.jpg" alt="exorcismo" id="posters"></a>
+                    <button type="button" class="boton_posters">Ver Horarios</button>
+                </div>
+
+                <div class="pelicula" id="peli_6 boton_superior">
+                    <div class="estreno_cartelera boton_superior">
+                        Estreno
+                    </div>
+                    <a href="#"><img src="./Imagenes/Estreno/las_momias.jpg" alt="momias" id="posters"></a>
+                    <button type="button" class="boton_posters">Ver Horarios</button>
+                </div>
+
+            </div>
+
+            <div class="wrappers peli" data-id="2">
+
+                <div class="pelicula" id="peli_7">
+                    <div class="estreno_cartelera boton_superior">
+                        Estreno
+                    </div>
+                    <a href="#"><img src="./Imagenes/Estreno/desconectada.jpg" alt="desconectada" id="posters"></a>
+                    <button type="button" class="boton_posters">Ver Horarios</button>
+                </div>
+
+                <div class="pelicula" id="peli_8">
+                    <div class="estreno_cartelera boton_superior">
+                        Estreno
+                    </div>
+                    <a href="#"><img src="./Imagenes/Estreno/jagua_voz.jpg" alt="jaguar" id="posters"></a>
+                    <button type="button" class="boton_posters">Ver Horarios</button>
+                </div>
+
+                <div class="pelicula" id="peli_9">
+                    <div class="estreno_cartelera boton_superior">
+                        Estreno
+                    </div>
+                    <a href="#"><img src="./Imagenes/Estreno/la_ex.jpg" alt="la_ex" id="posters"></a>
+                    <button type="button" class="boton_posters">Ver Horarios</button>
+                </div>
+
+                <div class="pelicula" id="peli_10">
+                    <div class="estreno_cartelera boton_superior">
+                        Estreno
+                    </div>
+                    <a href="#"><img src="./Imagenes/Estreno/cartel-el-cielo-no-puede-esperar.jpg" alt="cielo"
+                            id="posters"></a>
+                    <button type="button" class="boton_posters">Ver Horarios</button>
+                </div>
+
+            </div>
+
+
+            <a class="movieButton nextMovie" id="next"><i class="fa fa-right-long"></i></a>
+
+
+        </section>
+
+        <div class="todas_peliculas">
+            <a href="#" class="todas_peli">
+                <button class="todasPeli"><span>Ver Todas las Películas</span> </button>
+            </a>
+        </div>
+
+        <h1 class="h_cartelera-preventa h_top">Preventa / Próximo estreno</h1>
+
+        <section class="proximo secciones">
+
+            <!-- Sección Proximamente -->
+
+            <a class="proximoButton prevProximo" id="previous"><i class="fa fa-left-long"></i></a>
+
+            <div class="preventa_show wrappers prev" data-id="1">
+
+                <div class="preventa" id="prev_1">
+                    <div class="preventa_cartelera boton_superior">
+                        Preventa
+                    </div>
+                    <a href="#"><img src="./Imagenes/Preventa/coldplay.jpg" alt="coldplay" id="posters"></a>
+                    <button type="button" class="boton_posters">Ver Horarios</button>
+                </div>
+
+                <div class="preventa" id="prev_2">
+                    <div class="preventa_cartelera boton_superior">
+                        Preventa
+                    </div>
+                    <a href="#"><img src="./Imagenes/Preventa/all-of-those-voices-louis-tomlinson.jpg" alt="vouces"
+                            id="posters"></a>
+                    <button type="button" class="boton_posters">Ver Horarios</button>
+                </div>
+
+                <div class="preventa" id="prev_3">
+                    <div class="preventa_cartelera boton_superior">
+                        Preventa
+                    </div>
+                    <a href="#"><img src="./Imagenes/Preventa/el-tiempo-del-armagedon.jpg" alt="armaggedon"
+                            id="posters"></a>
+                    <button type="button" class="boton_posters">Ver Horarios</button>
+                </div>
+
+                <div class="preventa" id="prev_4">
+                    <div class="preventa_cartelera boton_superior">
+                        Preventa
+                    </div>
+                    <a href="#"><img src="./Imagenes/Preventa/john-wick-4.jpg" alt="john-wick" id="posters"></a>
+                    <button type="button" class="boton_posters">Ver Horarios</button>
+                </div>
+
+                <div class="preventa" id="prev_5">
+                    <div class="preventa_cartelera boton_superior">
+                        Preventa
+                    </div>
+                    <a href="#"><img src="./Imagenes/Preventa/metallica.jpg" alt="metallica" id="posters"></a>
+                    <button type="button" class="boton_posters">Ver Horarios</button>
+                </div>
+
+                <div class="preventa" id="prev_6">
+                    <div class="preventa_cartelera boton_superior">
+                        Preventa
+                    </div>
+                    <a href="#"><img src="./Imagenes/Preventa/shazam-2.jpg" alt="shazam" id="posters"></a>
+                    <button type="button" class="boton_posters">Ver Horarios</button>
+                </div>
+            </div>
+
+            <div class="wrappers prev" data-id="2">
+
+                <div class="preventa" id="prev_7">
+                    <div class="preventa_cartelera boton_superior">
+                        Preventa
+                    </div>
+                    <a href="#"><img src="./Imagenes/Preventa/air.jpg" alt="air" id="posters"></a>
+                    <button type="button" class="boton_posters">06 abril.. 2023</button>
+                </div>
+
+                <div class="preventa" id="prev_8">
+                    <div class="preventa_cartelera boton_superior">
+                        Preventa
+                    </div>
+                    <a href="#"><img src="./Imagenes/Preventa/calabozos-and-dragones.jpg" alt="d&d"
+                            id="posters"></a>
+                    <button type="button" class="boton_posters">30 mar.. 2023</button>
+                </div>
+
+                <div class="preventa" id="prev_9">
+                    <div class="preventa_cartelera boton_superior">
+                        Preventa
+                    </div>
+                    <a href="#"><img src="./Imagenes/Preventa/evil-dead-el-despertar.jpg" alt="evildead"
+                            id="posters"></a>
+                    <button type="button" class="boton_posters">20 abril.. 2023</button>
+                </div>
+
+                <div class="preventa" id="prev_10">
+                    <div class="preventa_cartelera boton_superior">
+                        Preventa
+                    </div>
+                    <a href="#"><img src="./Imagenes/Preventa/flash.jpg" alt="flash" id="posters"></a>
+                    <button type="button" class="boton_posters">15 jun.. 2023</button>
+                </div>
+
+                <div class="preventa" id="prev_11">
+                    <div class="preventa_cartelera boton_superior">
+                        Preventa
+                    </div>
+                    <a href="#"><img src="./Imagenes/Preventa/spider-man-a-spiderverso.jpg" alt="spider" id="posters"></a>
+                    <button type="button" class="boton_posters">01 jun.. 2023</button>
+                </div>
+
+                <div class="preventa" id="prev_12">
+                    <div class="preventa_cartelera boton_superior">
+                        Preventa
+                    </div>
+                    <a href="#"><img src="./Imagenes/Preventa/una-aventura-gigante.jpg" alt="gigante" id="posters"></a>
+                    <button type="button" class="boton_posters">16 mar.. 2023</button>
+                </div>
+            </div>
+
+
+            <a class="proximoButton nextProximo" id="next"><i class="fa fa-right-long"></i></a>
+        </section>
+
+        <div class="todas_peliculas">
+            <a href="#" class="todas_peli">
+                <button class="todasPeli"><span>Ver Todas las Películas</span> </button>
+            </a>
+        </div>
+
+    </div>
+
+    <!-- Espacio aliados -->
+
+    <div class="aliados">
+
+        <h2 class="h_aliados">Promociones de nuestros aliados</h2>
+
+        <div class="aliados_wrapper">
+            <div class="aliado_1">
+                <a href="#">
+                    <img src="./Imagenes/aliados/banco-falabella.jpg" alt="ali_1" id="img_aliados">
+                </a>
+            </div>
+            <div class="aliado_2">
+                <a href="#">
+                    <img src="./Imagenes/aliados/american-express.jpg" alt="ali_2" id="img_aliados">
+                </a>
+            </div>
+            <div class="aliado_3">
+                <a href="#">
+                    <img src="./Imagenes/aliados/banco-popular.jpg" alt="ali_3" id="img_aliados">
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Seccciones pie de página -->
+
+    <footer class="pie_pagina">
+        <div class="footer_secciones">
+
+            <div class="info">
+                <div class="lista">
+                    <h5 class="h_info">Sobre Cinemark</h5>
+                    <ul class="about">
+                        <li class="content">
+                            Quiénes somos
+                        </li>
+                        <li class="content">
+                            Términos y condiciones
+                        </li>
+                </div>
+
+                <div class="lista">
+                    <h5 class="h_info">Contáctanos</h5>
+                    <ul class="about">
+                        <li class="content">
+                            Pqrs
+                        </li>
+                </div>
+
+                <div class="lista">
+                    <h5 class="h_info">Marketing Empresarial</h5>
+                    <ul class="about">
+                        <li class="content">
+                            Ventas Corporativas
+                        </li>
+                        <li class="content">
+                            Eventos
+                        </li>
+                        <li class="content">
+                            Publiciddad
+                        </li>
+                </div>
+
+            </div>
+
+            <div class="apps">
+                <h5 class="h_info">Descarga nuestra App</h5>
+                <div class="apps_links">
+                    <button class="btn_app">
+                        <a href="https://play.google.com/store/apps/details?id=com.apptory.cinemark&hl=en">
+                            <img src="./Imagenes/google-play-badge.png" alt="g_play" id="img_apps">
+                        </a>
+                    </button>
+
+                    <button class="btn_app">
+
+                        <a href="https://apps.apple.com/co/app/cinemark-colombia/id577800992?itsct=apps_box_badge&amp;itscg=30200"
+                            style="display: inline-block; overflow: hidden; border-radius: 13px;  width: 134.17px;"><img
+                                src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/es-mx?size=250x83&amp;releaseDate=1353024000"
+                                alt="Download on the App Store" style="border-radius: 13px;  width: 134.17px;"></a>
+                    </button>
+
+                    <button class="btn_app">
+                        <a href="https://appgallery.huawei.com/#/app/C101367597">
+                            <img src="./Imagenes/appgallery-badge.png" alt="appgallery" id="img_apps">
+                        </a>
+                    </button>
+
+                </div>
+
+            </div>
+
+            <div class="sociales">
+                <div class="soc">
+                    <a href="https://www.facebook.com/CinemarkColombia">
+                        <img src="./Imagenes/facebook-f.svg" alt="appgallery">
+                    </a>
+                </div>
+
+                <div class="soc">
+                    <a href="https://twitter.com/CinemarkCol?lang=es">
+                        <img src="./Imagenes/twitter_.svg" alt="appgallery">
+                    </a>
+                </div>
+
+                <div class="soc">
+                    <a href="https://www.instagram.com/cinemarkcol">
+                        <img src="./Imagenes/instagram_.svg" alt="appgallery">
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="autor">
+            <span>Creado por Oswaldo Miranda</span>
+        </div>
+    </footer>
+</body>
+
+</html>

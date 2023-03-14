@@ -1,0 +1,480 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Formatemos todos las etiquetas de Body */
+
+body {
+    font-family: "Roboto Condensed", sans-serif;
+    padding-top: 150px;
+
+}
+
+
+/* Header */
+
+a {
+    text-decoration: none;
+}
+
+/* Barra de Standar de CInemark */
+header {
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: fixed;
+}
+
+.standar {
+    display: block;
+    background-color: #565656;
+    height: 43px;
+    padding: 5px;
+    box-sizing: border-box;
+    /* margin: 5vh; */
+}
+
+.standar a {
+    color: white;
+}
+
+.infoContainer {
+    color: white;
+    font-size: 90%;
+    display: flex;
+    justify-content: center;
+    padding-top: 0.5rem;
+    width: 98%;
+    height: 98%;
+    margin: 0.1rem 0.1rem;
+    border-color: #bfd22b;
+    border-style: solid;
+    border-width: 1px;
+
+}
+
+/* Barra de Menús corporativos */
+
+
+.social {
+    background-color: #ececec;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3rem;
+    padding-top: 0.35rem;
+    padding-bottom: 0.35rem;
+    justify-content: space-between;
+
+}
+
+/* Parte de redes sociales */
+
+.redes img {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    margin-right: 10px;
+
+}
+
+.redes {
+    margin-left: 5%;
+}
+
+/******************** Lista del medio *****************/
+
+.lista {
+    position: relative;
+}
+
+.lista a {
+    text-decoration: none;
+    color: #212121;
+    font-size: 11px;
+
+}
+
+
+/* Convertir el menú desplegable */
+
+ul,
+ol {
+    list-style: none;
+}
+
+.lista>li {
+    float: left;
+}
+
+.lista li {
+    text-decoration: none;
+    padding: 10px 12px;
+    /* display: block; */
+}
+
+.lista li ul {
+    display: none;
+    position: absolute;
+    min-width: 140px;
+    background-color: white;
+}
+
+.lista li:hover>ul {
+    display: block;
+}
+
+
+
+/* ültimo menú */
+.usuario {
+    margin-right: 10%;
+}
+
+.usuario button {
+
+    color: #ffffff;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    border-radius: 50px;
+
+    /* min-width: max-content; */
+    text-transform: uppercase;
+    margin-right: 0.3em;
+    height: 2em;
+    width: 9em;
+    font-size: .76em;
+    font-weight: 400;
+    box-shadow: 0 2px 0 rgb(0 0 0 / 2%);
+}
+
+.registrarse {
+
+    border-color: #3d3d3d;
+    background-color: #3d3d3d;
+    cursor: pointer;
+}
+
+.iniSesion {
+
+    border-color: #3d3d3d;
+    background-color: #b5121b;
+    cursor: pointer;
+}
+
+
+/************ Menú principal **********/
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+    font-size: 15px;
+    padding-right: 15%;
+    background-color: #ffffff;
+}
+
+.logo {
+    padding-left: 5%;
+}
+
+.cineLogo {
+
+    width: 12.5rem;
+}
+
+.menuPrincipal a {
+    text-decoration: none;
+    color: #7d0000;
+}
+
+.menuPrincipal {
+    padding-right: 1.5rem;
+    display: inline;
+}
+
+
+/************* Slider principal *******/
+
+/* Botones */
+
+.slideButton {
+    position: absolute;
+    top: 320px;
+    font-size: 1rem;
+    cursor: pointer;
+    color: white;
+}
+
+.prevSlide {
+    left: 1rem;
+}
+
+.nextSlide {
+    justify-self: end;
+}
+
+/* Cuerpo */
+
+.contenedor {
+    box-sizing: border-box;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider_contenedor {
+    display: grid;
+}
+
+.slider_body {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    opacity: 0;
+    pointer-events: none;
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    align-items: center;
+    transition: opacity 1s;
+}
+
+.slider_body--show {
+    opacity: 1;
+    pointer-events: unset;
+}
+
+.slider_img {
+    width: 100%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+.slider_buttons {
+    align-self: flex-end;
+    left: 43%;
+    font-size: 1rem;
+    position: absolute;
+    opacity: 0.5;
+    transform: scale(0.7);
+    cursor: pointer;
+    letter-spacing: 0.5rem;
+}
+
+
+/* Posters cartelera principal*/
+
+
+.secciones {
+    font-size: 15px;
+    display: grid;
+    grid-template-columns: 100px 1fr 100px;
+    align-items: center;
+    gap: 1em;
+    overflow: hidden;
+}
+
+.wrappers {
+    grid-column: 2/2;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    outline: none;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.peli_show {
+    opacity: 1;
+    pointer-events: unset;
+}
+
+.preventa_show {
+    opacity: 1;
+    pointer-events: unset;
+}
+
+.h_top {
+    margin-left: 10%;
+    color: #212121;
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    font-weight: 100;
+    padding: 1rem 0;
+}
+
+#posters {
+    height: 262px;
+    width: 177px;
+}
+
+.boton_superior {
+    font-weight: 100;
+    background-color: #b5121b;
+    color: white;
+    width: 177px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: .25rem;
+    font-size: 90%;
+    height: 32px;
+    justify-content: center;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.boton_posters {
+    background-color: #b5121b;
+    color: white;
+    width: 177px;
+    height: 32px;
+    text-transform: uppercase;
+    padding: .25rem;
+    font-size: 90%;
+    border-style: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0.25rem;
+    overflow: visible;
+}
+
+/* Botones navegación */
+
+.movieButton, .proximoButton {
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.prevMovie {
+    justify-self: end;
+}
+
+.prevProximo {
+    justify-self: end;
+}
+
+.todas_peliculas {
+    display: block;
+    text-align: center;
+    margin: 1rem 0;
+
+}
+
+.todasPeli {
+    border: 1px solid #979797;
+    background: #979797;
+    color: #ffffff;
+    border-radius: 50px;
+    text-transform: uppercase;
+    min-width: max-content;
+    box-shadow: 0 2px 0 rgb(0 0 0 / 2%);
+    cursor: pointer;
+    height: 32px;
+    padding: 0 15px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.todasPeli:hover {
+    background-color: #7d0000;
+}
+
+/* Sección aliados */
+.aliados {
+    padding: 1rem 10%;
+    /* padding-left: 10%;
+    padding-right: 10%; */
+}
+
+.h_aliados {
+    display: block;
+    margin-bottom: 0.75rem;
+    color: #212121;
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    font-weight: 100
+}
+
+#img_aliados {
+    height: 212px;
+    width: 353px;
+}
+
+.aliados_wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* Pie de página */
+.pie_pagina {
+    background-color: #ececec;
+    color: #333;
+
+
+}
+
+.footer_secciones {
+    font-size: 15px;
+    display: grid;
+    grid-template-columns: 2fr 1.5fr .4fr;
+    /* align-items: center; */
+    border: 1rem;
+    padding: 1.25rem 7%;
+}
+
+.lista {
+    padding-right: 1rem;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    /* padding: 1rem; */
+}
+
+.btn_app {
+    display: inline-block;
+    height: auto;
+    padding: 0;
+    border: 0;
+    border-radius: 8px;
+}
+
+#img_apps {
+    width: 134.17px;
+}
+
+.sociales {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+}
+
+.soc img {
+    height: 20px;
+    width: 20px;
+}
+
+.h_info {
+    font-size: 1.15rem;
+    opacity: .68;
+}
+
+.autor {
+    text-align: right;
+    display: block;
+    font-size: .75rem;
+    color: #333;
+    opacity: .8;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 0;
+}
